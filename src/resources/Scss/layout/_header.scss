@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+.container {
+    max-width: 90%;
+}
+@media (min-width: 1300px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1200px;
+    }
+}
+.bg-blue {
+    background: #233a95;
+}
+.headerWrapper .top-strip {
+    padding: 10px 0;
+}
+nav .row {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.headerWrapper .top-strip p {
+    color: #fff;
+    font-weight: 500;
+}
+.headerWrapper .header {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+
+.logoWrapper img {
+    width: 100%;
+}
+
+.headerWrapper .header .part2 .countryDrop {
+    padding: 10px 17px;
+    text-align: left;
+    justify-content: flex-start;
+    width: 150px;
+    height: 60px;
+    min-width: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    line-height: 16px;
+}
+.headerWrapper .header .part2 .countryDrop .ml-auto svg {
+    opacity: 0.8;
+}
+.headerWrapper .header .part2 .countryDrop .label {
+    text-transform: capitalize !important;
+    font-size: 12px !important;
+    opacity: 0.5;
+    color: #000;
+}
+.headerWrapper .header .part2 .countryDrop .name {
+    text-transform: capitalize !important;
+    font-size: 15px !important;
+
+    color: #4d629c;
+    font-weight: 700;
+}
+.locationModal .MuiPaper-rounded {
+    padding: 20px;
+    position: relative;
+}
+.locationModal-text {
+    font-size: 18px;
+    color: #000;
+    opacity: 0.8;
+}
+.locationModal .closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 30px;
+    color: #000;
+}
+.headerSearch {
+    width: 60%;
+    height: 60px;
+    background: #f3f4f7;
+    position: relative;
+}
+.headerSearch button {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 100;
+    min-width: 40px;
+    height: 40px;
+    color: #000;
+    border-radius: 50%;
+}
+.headerSearch button svg {
+    font-size: 30px;
+}
+.headerSearch input {
+    background: transparent !important;
+    outline: none;
+    border: 0px;
+    color: rgba(0, 0, 0, 0.8) !important;
+    width: 100%;
+    height: 58px;
+    padding: 0 25px;
+}
+.countryList {
+    margin-top: 15px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.countryItem button {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    color: #000;
+    padding: 15px;
+}
+.countryItem.active {
+    background: #ccc;
+}
+.part3 .circle {
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.cartTab button {
+    background: #fff1ee !important;
+}
+.cartCount {
+    background: red;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    top: -4px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+nav .navPart1 {
+    max-width: 22%;
+}
+.sidebarNav {
+    padding: 20px;
+    transition: all ease-in-out 0.5s;
+    background: #fff;
+}
+.navPart1 .cartWrapper {
+    z-index: 100;
+    position: relative;
+}
+.navPart1 .sidebarNav {
+    position: absolute;
+    left: -48px;
+    min-width: 270px;
+    top: 70px;
+    border: 1px solid #ccc;
+}
+.sidebar-item {
+    width: 200px;
+}
+.sidebar-item a {
+    display: block;
+}
+.sidebar-item {
+    position: static;
+    width: 100% !important;
+}
+.sidebar-link svg {
+    color: #000;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 24px;
+}
+
+.navIconLeft {
+    left: 0;
+}
+.navIconRight {
+    left: 200px;
+}
+.sidebarNav .submenu {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    background: #fff;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    display: block;
+    left: 100%;
+    padding: 0;
+    transition: all ease-in-out 0.2s;
+}
+.submenu button:hover {
+    background: #ccc;
+}
+.sidebarNav .sidebar-item .submenu a {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+.sidebarNav .sidebar-item a {
+    color: #000;
+    margin-right: auto;
+    margin-left: 30px;
+    text-decoration: none !important;
+    font-size: 13px;
+}
+.sidebar-item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+nav .allCartTab {
+    background: #2bbef9;
+    color: #fff;
+    /* padding: 7px; */
+    line-height: 50px;
+    border-radius: 26px;
+    min-width: 50px;
+    cursor: pointer;
+}
+nav .allCartTab .text {
+    font-weight: 600;
+}
+
+.allCartTab .menu {
+    transform: translateY(-50%);
+    top: 50%;
+    left: -28px;
+    font-size: 20px;
+}
+.allCartTab .angle {
+    transform: translateY(-50%);
+    top: 50%;
+    right: -28px;
+    font-size: 20px;
+}
+.navPart2 {
+    text-align: right;
+}
+.navPart2 ul {
+    margin-bottom: 0px;
+}
+.navPart2 ul li a:hover {
+    color: #2bbef9;
+}
+.navPart2 .list-inline-item {
+    position: relative;
+}
+.navPart2 .list-inline-item {
+    white-space: nowrap;
+}
+.navPart2 .submenu {
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+}
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    bottom: auto;
+    left: 7px;
+    right: 0;
+    min-width: 250px;
+    text-align: left;
+    padding: 20px 10px;
+    transition: all 0.3 ease-in-out;
+}
+.navPart2 ul li:hover .submenu {
+    visibility: inherit;
+    opacity: 1;
+}
+
+.submenu a {
+    padding: 10px 0 !important;
+    font-size: 16px !important;
+    font-weight: 650 !important;
+}
+.navPart2 ul li a {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: 550;
+    opacity: 0.8;
+    text-transform: uppercase;
+    margin-right: auto;
+}
+
+.navPart2 ul li a svg {
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+/* Banner */
+.bannerItem {
+    height: 400px;
+    object-fit: cover;
+}
+
+.homeBannerSection {
+    .banner01 {
+        overflow: hidden;
+        width: 100%;
+        // border-radius: 8px;
+    }
+}
