@@ -5,14 +5,14 @@ import Rating from "@mui/material/Rating";
 import React from "react";
 import Slider from "react-slick";
 import { FaAngleRight } from "react-icons/fa";
-import { Button, Input } from "@mui/material";
+import { Button } from "@mui/material";
 import HomeBanner from "../../Components/HomeBanner";
 import banner1 from "../../assets/images/banner1.png";
 import banner2 from "../../assets/images/banner2.png";
 import banner3 from "../../assets/images/banner3.png";
 import banner4 from "../../assets/images/banner4.png";
 import banner5 from "../../assets/images/banner5.png";
-import ProductItem from "../../Components/ProductItem/productItem";
+import ProductItem from "../../Components/ProductItem/index";
 import HomeCat from "../../Components/HomeCat";
 const Home = () => {
     var settings = {

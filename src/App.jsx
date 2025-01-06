@@ -6,12 +6,17 @@ import Home from "./Pages/Home/Home";
 import Header from "./Components/Header";
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
+import Footer from "./Components/Footer";
+import ProductModal from "./Components/ProductModal";
+import Listing from "./Pages/Listing";
 
 // Bước 1: Tạo một context
 // Create a context
 const MyContext = createContext();
 
 function App() {
+    const [viewModal, setViewModal] = useState(false);
+
     // https://countriesnow.space/api/v0.1/countries/
     // Bước 3: Tạo giá trị cần truyền xuống các component con
     const [countries, setCountries] = useState([]);
@@ -37,6 +42,8 @@ function App() {
         countries,
         selectedCountry,
         setSelectedCountry,
+        setViewModal,
+        viewModal,
     };
     return (
         <>
@@ -46,7 +53,14 @@ function App() {
                     <Header />
                     <Routes>
                         <Route path="/" exact={true} element={<Home />} />
+                        <Route
+                            path="/cat/:id"
+                            exact={true}
+                            element={<Listing />}
+                        />
                     </Routes>
+                    <Footer />
+                    {viewModal === true && <ProductModal />}
                 </MyContext.Provider>
             </BrowserRouter>
         </>

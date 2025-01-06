@@ -1,8 +1,15 @@
 import { Button, Rating } from "@mui/material";
+import { useContext, useState } from "react";
 import { BsArrowsFullscreen } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
+import ProductModal from "../ProductModal";
+import { MyContext } from "../../App";
 
 const ProductItem = () => {
+    const content = useContext(MyContext);
+    const viewProduct = () => {
+        content.setViewModal(true);
+    };
     return (
         <>
             <div className="item productItem p-2">
@@ -14,7 +21,15 @@ const ProductItem = () => {
                     />
                     <span className="badge badge-primary">28%</span>
                     <div className="actions d-flex flex-column">
-                        <Button className="mb-1">
+                        <Button
+                            className="mb-1"
+                            onClose={() => {
+                                viewProduct();
+                            }}
+                            onClick={() => {
+                                viewProduct();
+                            }}
+                        >
                             <BsArrowsFullscreen />
                         </Button>
                         <Button>

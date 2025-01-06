@@ -1,3 +1,11 @@
+.homeBannerSection {
+    .slick-track {
+        display: flex;
+        gap: 1rem;
+    
+    }
+    overflow: inherit;
+}
 .homeProducts-title {
     font-size: 22px;
     font-weight: 500;
@@ -242,7 +250,7 @@
     .right {
         width: 100%;
         position: absolute;
-        bottom: -60%;
+        bottom: -52%;
         right: 0;
     }
 }

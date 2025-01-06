@@ -1,6 +1,6 @@
 import { TfiAngleDoubleRight } from "react-icons/tfi";
 import { TfiAngleDoubleLeft } from "react-icons/tfi";
-import React, { useEffect, useRef, useState } from "react";
+import React, {  useRef, useState } from "react";
 import Slider from "react-slick";
 import { Button } from "@mui/material";
 const HomeCat = () => {
@@ -42,9 +42,6 @@ const HomeCat = () => {
             return item;
         });
     };
-    useEffect(() => {
-        console.log("Component rendered"); // Chỉ log một lần khi component render lần đầu
-    }, []); // Empty dependency array ensures it runs only once
 
     return (
         <>
@@ -59,9 +56,6 @@ const HomeCat = () => {
                         className="homeCatList"
                     >
                         {backgroundItem.map((item, index) => {
-                            console.log(
-                                `Background Color: ${item}, Index: ${index}`
-                            );
                             return (
                                 <div key={index} className="homeCatItem cursor">
                                     <div
@@ -86,7 +80,10 @@ const HomeCat = () => {
                         })}
                     </Slider>
                     <div className="actions mt-2">
-                        <Button className="button mr-1 shadow" onClick={previous}>
+                        <Button
+                            className="button mr-1 shadow"
+                            onClick={previous}
+                        >
                             <TfiAngleDoubleLeft />
                         </Button>
                         <Button className="button shadow" onClick={next}>
