@@ -9,6 +9,7 @@ const HomeBanner = () => {
         slidesToShow: 1,
         autoplaySpeed: 2000,
         slidesToScroll: 1,
+        arrows: false,
     };
     return (
         <>

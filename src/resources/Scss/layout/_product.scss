@@ -2,3 +2,14 @@
     padding: 25px 0;
     width: 100%;
 }
+
+.product2 {
+    .productWrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 7px;
+        .productItem {
+            overflow: hidden;
+        }
+    }
+}

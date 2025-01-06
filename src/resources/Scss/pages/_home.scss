@@ -32,10 +32,217 @@
     }
 }
 
-.product {
-    .item {
-        border: 1px solid #ccc;
+.productItem {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    &:hover {
+        .imgWrapper .actions {
+            right: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+        .imgWrapper img {
+            scale: 1.1;
+        }
+    }
+    .imgWrapper {
         width: 100%;
+        position: relative;
+        img {
+            transition: all ease-in-out 0.2s;
+        }
+        .badge-primary {
+            padding: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 13px;
+            background: #2bbef9;
+        }
+        .actions {
+            position: absolute;
+            top: 0;
+            right: -16px;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transition: all ease-in-out 0.2s;
+            button {
+                &:hover {
+                    background: #233a95;
+                    color: #fff;
+                }
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                min-width: 40px;
+                height: 40px;
+                color: #000;
+                background: #fff;
+            }
+        }
+    }
+    .title {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .rating {
+        font-size: 14px;
+    }
+    .text-success {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .oldPrice {
+        color: rgba($color: #000000, $alpha: 0.4);
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: line-through;
+    }
+    .nextPrice {
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+.productWrap {
+    padding-right: 5px;
+}
+
+// Home cat
+.homeCat {
+    position: relative;
+    .homeCatHeading {
+        text-transform: uppercase;
+    }
+    button {
+        min-width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #f2f3f4;
+        outline: none;
+        border: none;
+    }
+    .actions {
+        position: absolute;
+        top: -27px;
+        right: 166px;
+        text-align: center;
+        svg {
+            color: #2bbef9;
+        }
+    }
+}
+.homeCatList {
+    .slick-track {
+        display: flex;
+        gap: 1rem;
+    }
+}
+.homeCatItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 7px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    .imgWrapper {
+        padding: 20px;
+        width: 120px;
+    }
+    img {
+        text-align: center;
         height: auto;
+        width: 100%;
+    }
+    .info {
+        text-align: center;
+        h6 {
+            font-size: 13px;
+            white-space: nowrap;
+            font-weight: 650;
+        }
+        span {
+            color: rgba($color: #000000, $alpha: 0.5);
+        }
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+}
+// Banner Section
+.bannerSec {
+    gap: 15px;
+}
+
+// Home newsletter
+.homeNewsletter {
+    overflow: hidden;
+    margin-bottom: 100px;
+    width: 100%;
+    background: #233a95;
+    height: 380px;
+    position: relative;
+    padding: 50px;
+    .left {
+        .desc {
+            font-size: 17px;
+            font-weight: 300;
+
+            margin-bottom: 0;
+        }
+        h2 {
+            font-weight: 700;
+        }
+        h2 + p {
+            line-height: 1.7;
+        }
+        .form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            svg {
+                position: absolute;
+                color: #000;
+                opacity: 0.5;
+                z-index: 100;
+                left: 28px;
+                font-size: 22px;
+            }
+
+            input {
+                text-indent: 20px;
+                position: relative;
+                padding: 20px;
+                width: 90%;
+                &:placeholder-shown,
+                &:focus {
+                    outline: none;
+                }
+            }
+            button {
+                margin-left: -87px;
+                height: 55px;
+                background: #233a95;
+                color: #fff;
+                text-transform: none;
+            }
+        }
+    }
+
+    .right {
+        width: 100%;
+        position: absolute;
+        bottom: -60%;
+        right: 0;
     }
 }
