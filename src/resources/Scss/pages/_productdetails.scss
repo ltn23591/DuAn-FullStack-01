@@ -1,0 +1,129 @@
+.productDetails {
+    background: #f7f8fd;
+    margin-top: 60px;
+    .background-light {
+        background: #fff;
+    }
+    .text-capitalize {
+        font-size: 25px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .line {
+        width: 2px;
+        height: auto;
+        margin: 0 20px;
+        background: #ccc;
+    }
+    .oldPrice {
+        font-size: 23px;
+        text-decoration: line-through;
+        color: rgba($color: #000000, $alpha: 0.5);
+        font-weight: 600;
+    }
+    .nextPrice {
+        font-size: 27px;
+        font-weight: 600;
+    }
+    .text {
+        line-height: 35px;
+        padding: 0 10px;
+        background: #e5f8ed;
+        margin-left: -9px !important;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+
+    .count button {
+        border-radius: 50%;
+        min-width: 40px;
+        height: 40px;
+        color: #000;
+        background: #edeef5;
+        &:hover {
+            background: #ffcd00;
+        }
+    }
+    .addCart {
+        min-width: 200px;
+        background: #233a95;
+        color: #fff;
+        border-radius: 999px;
+    }
+    .favoriteItem {
+        margin-top: 20px;
+
+        button {
+            svg {
+                font-size: 17px;
+            }
+            border: 1px solid #ccc !important;
+            border-radius: 999px;
+            color: rgba($color: #000000, $alpha: 0.5);
+            font-size: 12px;
+            font-weight: 600;
+        }
+        button + button {
+            margin-left: 19px;
+            border: none !important;
+        }
+    }
+}
+
+// Tab
+.controlTab {
+    display: flex;
+    gap: 20px;
+    button {
+        padding: 10px;
+        border: 1px solid rgba($color: #000000, $alpha: 0.5);
+        color: #000;
+        border-radius: 20px;
+    }
+}
+
+// Content
+.productDetails-content {
+    padding: 30px;
+    min-height: 700px;
+    border: 1px solid #ccc;
+}
+
+.tabOne {
+    display: none;
+}
+
+.tabOne.tabActive {
+    display: block;
+}
+.review {
+    h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+.left {
+    .avatar {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+}
+.right {
+    svg {
+        font-size: 15px;
+    }
+    .name {
+        align-items: center;
+        font-size: 15px;
+        span {
+            font-size: 12px;
+            color: rgba($color: #000000, $alpha: 0.5);
+        }
+    }
+}
+.comment {
+    padding: 20px;
+    width: 100%;
+    resize: none;
+}

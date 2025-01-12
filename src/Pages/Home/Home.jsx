@@ -11,9 +11,10 @@ import banner1 from "../../assets/images/banner1.png";
 import banner2 from "../../assets/images/banner2.png";
 import banner3 from "../../assets/images/banner3.png";
 import banner4 from "../../assets/images/banner4.png";
-import banner5 from "../../assets/images/banner5.png";
+
 import ProductItem from "../../Components/ProductItem/index";
 import HomeCat from "../../Components/HomeCat";
+import HomeNewsletter from "./HomeNewsLetter";
 const Home = () => {
     var settings = {
         dots: false,
@@ -304,41 +305,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-            {/* Newsletter  */}
-            <section className="homeNewsletter ">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="left">
-                                <p className="desc text-white">
-                                    $20 discount for your first order
-                                </p>
-                                <h2 className="mb-3 text-white">
-                                    Join our newsletter and get...
-                                </h2>
-                                <p className="text-light">
-                                    Join our email subscription now to get
-                                    updates <br></br> on promotions and coupons.
-                                </p>
-                                <div className="form">
-                                    <MdOutlineMailOutline />
-                                    <input
-                                        type="text"
-                                        placeholder="Your email address"
-                                    />
-                                    <Button>Subscribe</Button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="right">
-                                <img src={banner5} alt="banner5" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+         
         </>
     );
 };

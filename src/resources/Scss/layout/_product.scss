@@ -2,7 +2,13 @@
     padding: 25px 0;
     width: 100%;
 }
-
+.productItem {
+    &:hover {
+        box-shadow: 9px 11px 40px -1px rgba(0, 0, 0, 0.38);
+        -webkit-box-shadow: 9px 11px 40px -1px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 9px 11px 40px -1px rgba(0, 0, 0, 0.38);
+    }
+}
 .product2 {
     .productWrap {
         display: grid;
@@ -12,4 +18,7 @@
             overflow: hidden;
         }
     }
+}
+.imgWrapper {
+    overflow: hidden;
 }

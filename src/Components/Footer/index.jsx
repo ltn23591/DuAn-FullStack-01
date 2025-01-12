@@ -7,9 +7,11 @@ import { RiDiscountPercentLine } from "react-icons/ri";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaAirFreshener } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import HomeNewsletter from "../../Pages/Home/HomeNewsLetter";
 const Footer = () => {
     return (
         <footer className="footer">
+            <HomeNewsletter />
             <div className="container">
                 {/* Footer top */}
                 <div className="footerTop">

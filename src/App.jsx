@@ -9,6 +9,8 @@ import axios from "axios";
 import Footer from "./Components/Footer";
 import ProductModal from "./Components/ProductModal";
 import Listing from "./Pages/Listing";
+import ProductDetails from "./Pages/ProductDetails";
+import Cart from "./Pages/Cart";
 
 // Bước 1: Tạo một context
 // Create a context
@@ -58,6 +60,12 @@ function App() {
                             exact={true}
                             element={<Listing />}
                         />
+                        <Route
+                            path="/product/:id"
+                            exact={true}
+                            element={<ProductDetails />}
+                        />
+                        <Route path="/cart" exact={true} element={<Cart />} />
                     </Routes>
                     <Footer />
                     {viewModal === true && <ProductModal />}

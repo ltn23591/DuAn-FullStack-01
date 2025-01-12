@@ -1,0 +1,28 @@
+.sidebar {
+    width: 30%;
+    margin-bottom: 100px;
+}
+.sticky {
+    position: sticky;
+    top: 50px;
+}
+.sidebarList {
+    max-height: 200px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    .sidebarItem {
+        height: 25px;
+        width: 100%;
+        margin: 5px;
+    }
+}
+.filterBox3 {
+    .sidebarList {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+.sidebarImg {
+    width: 100% !important;
+}

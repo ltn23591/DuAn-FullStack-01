@@ -1,0 +1,17 @@
+.table-responsive {
+    thead {
+        background: #ececec;
+    }
+    border-radius: 10px;
+    overflow: hidden;
+    font-weight: 600;
+    border-bottom: none;
+}
+.cart {
+    .cartItemWrapper {
+        text-decoration: none !important;
+        img {
+            width: 100px;
+        }
+    }
+}

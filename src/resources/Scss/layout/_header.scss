@@ -11,15 +11,15 @@ body {
     font-size: 14px;
 }
 .container {
-    max-width: 90%;
+    max-width: 100%;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1500px) {
     .container,
     .container-lg,
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 1200px;
+        max-width: 1400px !important;
     }
 }
 .bg-blue {
@@ -169,7 +169,7 @@ nav .navPart1 {
 }
 .navPart1 .sidebarNav {
     position: absolute;
-    left: -48px;
+    left: -83px;
     min-width: 270px;
     top: 70px;
     border: 1px solid #ccc;
@@ -325,6 +325,5 @@ nav .allCartTab .text {
     .banner01 {
         overflow: hidden;
         width: 100%;
-        // border-radius: 8px;
     }
 }

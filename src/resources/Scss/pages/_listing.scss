@@ -1,0 +1,88 @@
+.product_Listing_Page {
+    margin-top: 50px;
+}
+.content_right {
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 30px;
+    img {
+        width: 100%;
+        border-radius: 30px;
+    }
+    .showBy {
+        width: 100%;
+        margin: 20px 0;
+        height: 100px;
+        background: #f7f8fd;
+    }
+
+    .action-numb {
+        button {
+            gap: 10px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        svg {
+            color: #000;
+        }
+    }
+    .showBy {
+        button.MuiButtonBase-root {
+            min-width: 10px !important;
+            color: rgba($color: #000000, $alpha: 0.5);
+        }
+        .act {
+            color: #000;
+        }
+    }
+}
+.action-list {
+    .MuiList-root {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        width: 80px;
+    }
+}
+
+.product-listItem {
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    .product {
+        transition: all ease 0.5s;
+    }
+    .product.one {
+        width: 100%;
+        .productItem {
+            .imgWrapper {
+                width: 35%;
+            }
+            img {
+                width: 60% !important;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .info {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .product.two {
+        width: 48% !important;
+    }
+    .product.three {
+        width: 30.3333% !important;
+    }
+    .product.four {
+        width: 23% !important;
+    }
+}
+
+.Pagination {
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}

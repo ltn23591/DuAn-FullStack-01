@@ -47,7 +47,7 @@ const Header = () => {
                                         <FaRegCircleUser />
                                     </Button>
                                     <div className="d-flex align-items-center ml-auto cartTab ">
-                                        <div className="price">$0.00</div>
+                                        <div className="price">$20.50</div>
                                         <div className="position-relative">
                                             <Button className="circle ml-2">
                                                 <BsBasket3 className="basket" />
